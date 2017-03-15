@@ -1,11 +1,13 @@
 package biblioteka;
 
+import java.util.LinkedList;
+
 public class Knjiga {
 	private String naslov;
 	private long isbn;
 	private String izdavac;
 	private int izdanje;
-	private String autori;
+	private LinkedList<Autor> autori;
 
 	public String getNaslov() {
 		return naslov;
@@ -39,11 +41,11 @@ public class Knjiga {
 		this.izdanje = izdanje;
 	}
 
-	public String getAutori() {
+	public LinkedList<Autor> getAutori() {
 		return autori;
 	}
 
-	public void setAutori(String autori) {
+	public void setAutori(LinkedList<Autor> autori) {
 		this.autori = autori;
 	}
 
